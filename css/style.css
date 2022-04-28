@@ -13,17 +13,17 @@
   box-sizing: border-box;
 }
 
-body,
-main {
+body, main {
   width: 100%;
-  height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: hsl(217, 54%, 11%);
   font-family: "Outfit", sans-serif;
   color: white;
+  height: 100vh;
 }
+
 
 h1 {
   font-size: 22px;
@@ -140,6 +140,8 @@ p {
 }
 
 .attribution {
+  margin-top: -250px;
+  align-items: center;
   font-size: 11px;
   text-align: center;
 }
