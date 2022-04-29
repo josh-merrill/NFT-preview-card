@@ -51,9 +51,33 @@ p {
   box-shadow: 20px 20px 20px hsl(217deg 50% 10%);
 }
 
+.image-wrapper {
+    width:302px;
+    height: 302px;
+    border-radius: 8px;
+    }
+
+  .overlay {
+    position:  absolute;
+    top: 28px;
+    left: 24px;
+    right: 24px;
+    padding: 24px;
+    height: 302.5px;
+    width: 302px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .image-wrapper:hover .overlay {
+    opacity: .75;
+  }
+
 .main-image {
-  position: relative;
-  width: 302px;
+  display: block;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -140,7 +164,7 @@ p {
 }
 
 .attribution {
-  margin-top: -250px;
+  margin-top: -20px;
   align-items: center;
   font-size: 11px;
   text-align: center;
