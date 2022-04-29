@@ -30,6 +30,11 @@ h1 {
   font-weight: 600;
   line-height: 28px;
 }
+h1:hover {
+  color: #00FFF8;
+  transition: .5s ease;
+  cursor: pointer;
+}
 
 p {
   font-size: 18px;
@@ -68,11 +73,15 @@ p {
     border-radius: 8px;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #00FFF8;
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .image-wrapper:hover .overlay {
     opacity: .75;
+    cursor: pointer;
   }
 
 .main-image {
@@ -140,6 +149,12 @@ p {
   color: white;
   font-size: 18px;
   font-weight: 300;
+}
+
+.card-footer p:hover {
+  color: #00FFF8;
+  transition: .5s ease;
+  cursor: pointer;
 }
 
 .card-footer img {
