@@ -1,11 +1,11 @@
 /* ==========================================================================
-   Global fonts
+   Google font import
    ========================================================================== */
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 /* ==========================================================================
-   Global fonts
+   Global CSS styling
    ========================================================================== */
 * {
   margin: 0;
@@ -13,7 +13,8 @@
   box-sizing: border-box;
 }
 
-body, main {
+body,
+main {
   width: 100%;
   display: grid;
   justify-content: center;
@@ -24,15 +25,14 @@ body, main {
   height: 100vh;
 }
 
-
 h1 {
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
 }
 h1:hover {
-  color: #00FFF8;
-  transition: .5s ease;
+  color: #00fff8;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
@@ -57,32 +57,50 @@ p {
 }
 
 .image-wrapper {
-    width:302px;
-    height: 302px;
-    border-radius: 8px;
-    }
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+}
 
-  .overlay {
-    position:  absolute;
-    top: 28px;
-    left: 24px;
-    right: 24px;
-    padding: 24px;
-    height: 302.5px;
-    width: 302px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #00FFF8;
-    background-image: url(../images/icon-view.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.overlay {
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  right: 24px;
+  padding: 24px;
+  height: 302.5px;
+  width: 302px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #00fff8;
+}
 
-  .image-wrapper:hover .overlay {
-    opacity: .75;
-    cursor: pointer;
-  }
+.icon {
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  right: 24px;
+  padding: 24px;
+  height: 302.5px;
+  width: 302px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+}
+
+.image-wrapper:hover .icon {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 0.75;
+  cursor: pointer;
+}
 
 .main-image {
   display: block;
@@ -152,8 +170,8 @@ p {
 }
 
 .card-footer p:hover {
-  color: #00FFF8;
-  transition: .5s ease;
+  color: #00fff8;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
